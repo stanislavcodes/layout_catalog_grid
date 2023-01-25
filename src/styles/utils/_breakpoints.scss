@@ -1,0 +1,29 @@
+// breakpoint values
+$smallBreakpoint: 488px;
+$mediumBreakpoint: 768px;
+$largeBreakpoint: 1024px;
+
+// breakpoints mixins
+@mixin smallest-breakpoint {
+  @media only screen and (max-width: $smallBreakpoint) {
+    @content;
+  }
+}
+
+@mixin small-breakpoint {
+  @media only screen and (min-width: $smallBreakpoint) {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media only screen and (min-width: $mediumBreakpoint) {
+    @content;
+  }
+}
+
+@mixin large-breakpoint {
+  @media only screen and (min-width: $largeBreakpoint) {
+    @content;
+  }
+}
