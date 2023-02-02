@@ -1,9 +1,8 @@
 .catalog {
-  gap: $card-gap;
-  max-width: calcMaxWidth($card-width, $card-gap, $catalog-side-padding);
   display: grid;
   grid-template-columns: $card-width;
   justify-content: center;
+  gap: $card-gap;
 
   @include small-breakpoint {
     grid-template-columns: repeat(2, $card-width);
